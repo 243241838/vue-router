@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!--一个view-->
+    <!--
+    <div id="app">
+        <div>
+            <router-link to="/">首页</router-link>
+            <router-link to="/about">关于我们</router-link>
+            <router-link to="/user/哈哈">王华华</router-link>
+            <router-link to="/user/李丹">李丹</router-link>
+            <button @click="surf()">漫游</button>
+        </div>
+        <div>
+            <router-view></router-view>
+        </div>
+    </div>
+    -->
+    <!--多个view一般2-5个就好了-->
+    <!--
+    <div id="app">
+        <div>
+            <router-link to="/">首页</router-link>
+            <router-link to="/user">用户管理</router-link>
+            <router-link to="/post">帖子管理</router-link>
+        </div>
+        <div>
+            <router-view name="sidebar"></router-view>
+            <router-view name="content"></router-view>
+        </div>
+    </div>
+    -->
+    <!--权限配置-->
+    <div id="app">
+        <div>
+            <router-link to="/">首页</router-link>
+            <router-link to="/login">登录</router-link>
+            <router-link to="/post">帖子管理</router-link>
+             <router-link to="/a">a</router-link>
+        </div>
+        <div>
+            <router-view ></router-view>
+        </div>
+    </div>
+</body>
+<script src="js/vue.js"></script>
+<script src="js/vue-router.js"></script>
+<script src="js/app.js"></script>
+</html>
